@@ -1,0 +1,19 @@
+
+2020-10-22 02:42:33,643 INFO: errors [in E:\Programming\Web projects\nanodegree\project fuyer\FSND\projects\01_fyyur\finished_code\app.py:339]
+2020-10-22 02:42:40,901 ERROR: Exception on /venues [GET] [in c:\users\omar\appdata\local\programs\python\python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\omar\appdata\local\programs\python\python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\omar\appdata\local\programs\python\python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\omar\appdata\local\programs\python\python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\omar\appdata\local\programs\python\python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\omar\appdata\local\programs\python\python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\omar\appdata\local\programs\python\python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Programming\Web projects\nanodegree\project fuyer\FSND\projects\01_fyyur\finished_code\app.py", line 56, in venues
+    data=db.session.query(Venue.city,Venue.state).group_by(Venue.city,Venue.state).all()
+NameError: name 'db' is not defined
